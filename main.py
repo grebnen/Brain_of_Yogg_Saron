@@ -11,7 +11,7 @@ rooms = {
 }
 items = {
     'Freyas sanctuary of life': 'Blossom',
-    'Chamber of Promises': 'Beacon of Communication',
+    'chamber of promises': 'Beacon of Communication',
     'Hodirs Chamber': 'Ring',
     'Thorims room': 'Thorims hammer',
     'Brain of Yogg Saron': 'Yogg Saron'
