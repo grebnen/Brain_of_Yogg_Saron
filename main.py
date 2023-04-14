@@ -63,6 +63,16 @@ while 1:  # gameplay loop
             print('A great evil is in that direction, quickly try another direction!')  # print
         else:
             state = new_state  # changing state value to new_state
-    else:
-        print('Invalid direction!!')  # print
+    else: #updated the error messaging to be more descriptive
+        itemvals = []
+        print()
+        print('Invalid Input')
+        print('Please enter a valid direction: north, south, east, west')
+        print('or')
+        print('Enter an item to add to your inventory')       
 
+        for k, v in items.items():
+            itemvals.append(v)
+
+        print(', '.join(itemvals))
+        print()
