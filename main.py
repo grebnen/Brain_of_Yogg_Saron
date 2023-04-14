@@ -4,20 +4,20 @@
 import sys
 
 rooms = {
-    'Freyas sanctuary of life': {'South': 'chamber of promises'},
-    'chamber of promises': {'North': 'Freyas sancturay of life', 'East': 'thorims room'},
-    'thorims room': {'South': 'Freyas sanctuary of life', 'West': 'hodirs chamber'},
+    'Freya\'s sanctuary of life': {'South': 'chamber of promises'},
+    'chamber of promises': {'North': 'Freya\'s sancturay of life', 'East': 'thorims room'},
+    'thorims room': {'South': 'Freya\'s sanctuary of life', 'West': 'hodirs chamber'},
     'hodirs chamber': {'West': 'Brain of Yogg Saron'}
 }
 items = {
-    'Freyas sanctuary of life': 'Blossom',
+    'Freya\'s sanctuary of life': 'Blossom',
     'chamber of promises': 'Beacon of Communication',
     'Hodirs Chamber': 'Ring',
     'Thorims room': 'Thorims hammer',
     'Brain of Yogg Saron': 'Yogg Saron'
 
 }
-state = 'Freyas sanctuary of life'
+state = 'Freya\'s sanctuary of life'
 inventory = []
 
 
