@@ -5,15 +5,15 @@ import sys
 
 rooms = {
     'Freya\'s sanctuary of life': {'South': 'chamber of promises'},
-    'chamber of promises': {'North': 'Freya\'s sancturay of life', 'East': 'thorims room'},
-    'thorims room': {'South': 'Freya\'s sanctuary of life', 'West': 'hodirs chamber'},
-    'hodirs chamber': {'West': 'Brain of Yogg Saron'}
+    'chamber of promises': {'North': 'Freya\'s sancturay of life', 'East': 'thorim\'s room'},
+    'thorim\'s room': {'South': 'Freya\'s sanctuary of life', 'West': 'hodir\'s chamber'},
+    'hodir\'s chamber': {'West': 'Brain of Yogg Saron'}
 }
 items = {
     'Freya\'s sanctuary of life': 'Blossom',
     'chamber of promises': 'Beacon of Communication',
-    'Hodirs Chamber': 'Ring',
-    'Thorims room': 'Thorims hammer',
+    'Hodir\'s Chamber': 'Ring',
+    'Thorim\'s room': 'Thorim\'s hammer',
     'Brain of Yogg Saron': 'Yogg Saron'
 
 }
