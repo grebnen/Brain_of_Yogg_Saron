@@ -37,35 +37,29 @@ def show_status():
     print('You currently have', inventory)
     print('You can move to the following rooms:', ', '.join(list(rooms[state].keys())))
 
-while True:
+while state != 'Brain of Yogg Saron':
     show_status()
 
-    if state == 'Brain of Yogg Saron':
-        print('Battling with Yogg Saron', end='')
-        print()
-        if len(inventory) == 4:
-            print('You have defeated Yogg Saron - congratulations')
-        else:
-            print('Yogg Saron has consumed you - try again')
-        break
+    direction = input('Enter item you want OR direction to go OR exit to give up: ').lower()
 
-    direction = input('Enter item you want OR direction to go OR exit to give up: ')
-
-    if direction.lower() == items[state].lower():
-        if items[state] not in inventory:
-            inventory.append(items[state])
-        continue
-
-    direction = direction.capitalize()
-
-    if direction == 'Exit':
+    if direction == 'exit':
         sys.exit(0)
 
-    if direction in ['East', 'West', 'North', 'South']:
-        new_state = get_new_state(direction, state)
-        if new_state == state:
-            print('A great evil is in that direction, quickly try another direction!')
-        else:
-            state = new_state
+    if direction == items[state].lower() and items[state] not in inventory:
+        inventory.append(items[state])
+        continue
+
+    if direction in rooms[state]:
+        state = get_new_state(direction, state)
     else:
         print('Invalid direction!')
+
+show_status()
+
+print('Battling with Yogg Saron', end='')
+print()
+
+if len(inventory) == 4:
+    print('You have defeated Yogg Saron - congratulations')
+else:
+    print('Yogg Saron has consumed you - try again')
