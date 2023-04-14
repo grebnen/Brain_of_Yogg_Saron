@@ -4,14 +4,14 @@
 import sys
 
 rooms = {
-    'Freya\'s sanctuary of life': {'South': 'chamber of promises'},
-    'chamber of promises': {'North': 'Freya\'s sancturay of life', 'East': 'thorim\'s room'},
-    'thorim\'s room': {'South': 'Freya\'s sanctuary of life', 'West': 'hodir\'s chamber'},
-    'hodir\'s chamber': {'West': 'Brain of Yogg Saron'}
+    'Freya\'s sanctuary of life': {'South': 'Chamber of promises'},
+    'Chamber of promises': {'North': 'Freya\'s sanctuary of life', 'East': 'Thorim\'s room'},
+    'Thorim\'s room': {'South': 'Freya\'s sanctuary of life', 'West': 'Hodir\'s Chamber'},
+    'Hodir\'s Chamber': {'West': 'Brain of Yogg Saron'}
 }
 items = {
     'Freya\'s sanctuary of life': 'Blossom',
-    'chamber of promises': 'Beacon of Communication',
+    'Chamber of promises': 'Beacon of Communication',
     'Hodir\'s Chamber': 'Ring',
     'Thorim\'s room': 'Thorim\'s hammer',
     'Brain of Yogg Saron': 'Yogg Saron'
@@ -34,7 +34,7 @@ def get_new_state(state, direction):
 
 while 1:  # gameplay loop
     print('You are in the ', state)  # printing state
-    if state == 'Brain of Yogg saron':
+    if state == 'Brain of Yogg Saron':
         print('Battling with Yogg Saron', end='')
         for i in range(50):
             for j in range(1000000):
